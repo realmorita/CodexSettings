@@ -1,0 +1,16 @@
+model = "gpt-5-codex"
+
+[tools]
+web_search = true
+
+[mcp_servers.context7]
+command = "npx"
+args = ["--yes", "@upstash/context7-mcp"]
+
+[mcp_servers.serena]
+command = "uvx"
+args = ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "codex"]
+
+[mcp_servers.markitdown]
+command = "uvx"
+args = ["markitdown-mcp"]

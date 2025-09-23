@@ -1,0 +1,6 @@
+log/
+sessions/
+auth.json
+history.jsonl
+internal_storage.json
+version.json
