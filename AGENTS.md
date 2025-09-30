@@ -5,6 +5,7 @@
 
 # RESPONSE RULES
 - Always respond in Japanese.
+- Do not use emojis in comments or output statements.
 
 # TOOLS
 ## Serena
