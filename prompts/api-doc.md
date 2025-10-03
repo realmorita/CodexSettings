@@ -8,4 +8,4 @@
 - エラーコード
 - 使用例（curl）
 
-OpenAPI 3.0形式で docs/api.md に出力してください。
+OpenAPI 3.0形式で docs/api.yml に出力してください。
