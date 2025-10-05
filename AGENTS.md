@@ -38,6 +38,48 @@
 - Every file should have clear Header Comments at the top, explaining where the file is, and what it does.
 - It is better to add more comments than less.
 
+# Commit Message Structure
+**Important: All commit messages must be written in Japanese.**
+
+Commit messages should follow this unified structure:
+
+```text
+<type>(<scope>): #<Issue Number> <subject>
+<body>
+<footer>
+```
+
+- `<type>`: Type of change. Choose from the prefixes in the table below.
+- `(<scope>)`: Scope of impact (optional). Specify related modules or directory names.
+- `#<Issue Number>`: Always specify the corresponding issue number. Omit if there is no corresponding issue.
+- `<subject>`: Write a brief summary in imperative mood, around 30 characters.
+- `<body>`: Optional. Describe background, reasons, and scope of impact in detail.
+- `<footer>`: Optional. Re-reference related issues or declare breaking changes.
+
+| Prefix   | Description                                          |
+|----------|------------------------------------------------------|
+| feat     | Add a new feature                                    |
+| fix      | Fix a bug                                            |
+| docs     | Change documentation                                 |
+| style    | Style adjustments (formatting, semicolons, etc.)     |
+| refactor | Refactoring without changing behavior                |
+| test     | Add or modify test code                              |
+| chore    | Changes to build process, tools, or dependency mgmt  |
+| perf     | Performance improvements                             |
+| build    | Changes to build system or external dependencies     |
+| ci       | Changes to CI/CD configuration or scripts            |
+| revert   | Revert a previous commit                             |
+
+#### Example
+```text
+feat(user): #10 ユーザー登録機能を追加
+
+ユーザーがメールアドレスとパスワードでアカウントを作成できるようにしました。
+入力validationやエラーハンドリングも実装済みです。
+
+Closes #10
+```
+
 # SIMPLICITY
 - Always prioritize writing clean, simple, and modular code.
 - The fewer lines of code, the better.
