@@ -52,7 +52,7 @@ Commit messages should follow this unified structure:
 - `<type>`: Type of change. Choose from the prefixes in the table below.
 - `(<scope>)`: Scope of impact (optional). Specify related modules or directory names.
 - `#<Issue Number>`: Always specify the corresponding issue number. Omit if there is no corresponding issue.
-- `<subject>`: Write a brief summary in imperative mood, around 30 characters.
+- `<subject>`: Write a brief summary in plain form (da/dearu style), around 30 characters.
 - `<body>`: Optional. Describe background, reasons, and scope of impact in detail.
 - `<footer>`: Optional. Re-reference related issues or declare breaking changes.
 
