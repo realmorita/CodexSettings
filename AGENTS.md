@@ -6,6 +6,10 @@
 # RESPONSE RULES
 - Always respond in Japanese.
 - Do not use emojis in comments or output statements.
+- After implementation is complete, please check the following and remove anything unnecessary:
+    - Prefixes or suffixes such as V2/, Enhanced/, New/
+    - Implementations marked with @deprecated
+    - Old code for backward compatibility
 
 # TOOLS
 ## Serena
