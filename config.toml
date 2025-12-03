@@ -1,7 +1,8 @@
-model = "gpt-5-codex"
+model = "gpt-5.1-codex-max"
+model_reasoning_effort = "medium"
 
-[tools]
-web_search = true
+[features]
+web_search_request=true
 
 [mcp_servers.context7]
 command = "npx"
@@ -12,8 +13,3 @@ description = "Context7 MCP pulls up-to-date, version-specific documentation and
 command = "uvx"
 args = ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "codex"]
 description = "An advanced code intelligence MCP server providing symbolic code analysis, navigation, and manipulation capabilities including symbol search, reference finding, pattern matching, and code structure understanding for efficient codebase exploration and refactoring."
-
-[mcp_servers.markitdown]
-command = "uvx"
-args = ["markitdown-mcp"]
-description = "A lightweight MCP server that converts various file formats (PDF, Word, Excel, PowerPoint, images, audio, HTML, etc.) into structured Markdown format, preserving document elements like headings, lists, tables, and links for LLM processing."
